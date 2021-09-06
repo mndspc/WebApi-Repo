@@ -15,6 +15,9 @@ namespace WebApiDemo
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
 
+            // to add [ Microsoft.AspNet.WebApi.Cors] package from nuget
+            config.EnableCors();
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
